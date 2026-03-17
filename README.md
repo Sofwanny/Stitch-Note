@@ -1,16 +1,19 @@
-# React + Vite
+<div align="center">
+  <h1>🪡 Stitch Note</h1>
+  <p><i>The ultimate productivity tool tailored for fashion designers.</i></p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+**Stitch Note** is a productivity tool for fashion designers that helps them keep record of clients' measurements, payment statuses, and delivery dates. By keeping them from getting lost and avoiding guesswork, Stitch Note guarantees maximum efficiency. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As an added bonus, designers can also browse various fashion styles online to find the latest and best looks of the year! 🧵✨
 
-## React Compiler
+## ✨ Key Features
+- 📏 **Measurement Tracking:** Keep precise, organized records of all your clients' unique measurements.
+- 💳 **Payment Status:** Never lose track of deposits, pending balances, and final payments.
+- 📅 **Delivery Deadlines:** Stay on schedule and reliably hit every client's delivery date.
+- 👗 **Style Inspiration:** Browse the latest trends and styles directly within the app.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Built with React + Vite + Tailwind CSS*
