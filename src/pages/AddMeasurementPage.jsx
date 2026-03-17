@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import InputField from '../components/InputField';
 import { ArrowLeft, Save } from 'lucide-react';
 
-export default function AddMeasurementPage() {
+export default function AddMeasurementPage({ setClients }) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: '',
@@ -34,15 +34,18 @@ export default function AddMeasurementPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Saved:", formData);
-    // Add logic here later to save client data
+    const newClient = {
+      ...formData,
+      id: Date.now().toString()
+    };
+    setClients(prev => [...prev, newClient]);
     navigate('/');
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFF8DC] via-[#fdf6d4] to-[#f4e6b3] pb-24">
+    <div className="min-h-screen bg-[#FEFBF3] pb-24">
       {/* Header */}
-      <div className="sticky top-0 z-20 bg-[#FFF8DC]/90 backdrop-blur-md w-full border-b-[3px] border-[#8B4513]/80 px-4 py-4 sm:py-5 shadow-sm flex items-center justify-between">
+      <div className="sticky top-0 z-20 bg-[#FEFBF3]/90 backdrop-blur-md w-full border-b-[3px] border-[#8B4513]/80 px-4 py-4 sm:py-5 shadow-sm flex items-center justify-between">
         <button 
           onClick={() => navigate('/')}
           className="p-2 rounded-full hover:bg-amber-900/10 text-[#8B4513] transition-colors"
